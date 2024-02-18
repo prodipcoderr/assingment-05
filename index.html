@@ -8,8 +8,8 @@
 
   <!-- Custom CDN -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="css/styles.css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
@@ -207,7 +207,7 @@
                   </div>
                   <div class="seats-left flex text-center items-center gap-3 bg-green-100 p-3 rounded-2xl font-medium">
                     <img src="./img/seat-green.png" alt="" class="w-8 h-8">
-                    <p><span id="seats" class="mr-2">40</span>Seats left</p>
+                    <p><span id="seats-count" class="mr-2">40</span>Seats left</p>
                   </div>
                 </div>
                 <div class="section-two bg-gray-100 p-7 rounded-2xl space-y-7 font-bold">
@@ -269,48 +269,88 @@
               </div>
               <div class="main-seats-section flex justify-between gap-20">
                 <div class="seats-section-01 grid grid-cols-2 gap-3 w-6/12">
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">A1</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">A2</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">B1</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">B2</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">C1</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">C2</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">D1</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">D2</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">E1</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">E2</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">F1</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">F2</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">G1</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">G2</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">H1</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">H2</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">I1</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">I2</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">J1</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">J2</button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">A1</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">A2</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">B1</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">B2</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">C1</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">C2</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">D1</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">D2</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">E1</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">E2</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">F1</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">F2</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">G1</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">G2</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">H1</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">H2</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">I1</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">I2</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">J1</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats"><span
+                      class="seat-title">J2</span></button>
                 </div>
                 <div class="seats-section-02 grid grid-cols-2 gap-3 w-6/12">
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">A3</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">A4</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">B3</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">B4</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">C3</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">C4</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">D3</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">D4</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">E3</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">E4</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">F3</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">F4</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">G1</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">G2</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">H1</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">H2</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">I1</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">I2</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">J1</button>
-                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats">J2</button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">A3</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">A4</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">B3</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">B4</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">C3</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">C4</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">D3</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">D4</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">E3</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">E4</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">F3</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">F4</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">G1</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">G2</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">H1</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">H2</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">I1</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">I2</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">J1</span></button>
+                  <button id="" class="py-4 px-10 bg-slate-100 rounded-lg seats "><span
+                      class="seat-title">J2</span></button>
                 </div>
               </div>
             </section>
@@ -326,11 +366,8 @@
                 <div class="info-02">Class</div>
                 <div class="info-03">Price</div>
               </div>
-              <div class="ticket-list">
-                <ul id="list-container" class="flex justify-between mt-5">
-                  <li id="seats">A1</li>
-                  <li id="class">Clasic</li>
-                  <li id="price">550</li>
+              <div id="ticket-list">
+                <ul id="list-container" class="list-container">
                 </ul>
               </div>
 
