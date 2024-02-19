@@ -39,10 +39,10 @@
 
           <!-- bus-button -->
           <div class="btn-section">
-            <button class="flex btn px-8 bg-[#1cd1003f] border-[#1DD100] items-center">
-              <span class="font-raleway font-bold capitalize text-[20px] text-[#1DD100]">bus</span>
-              <img src="./img/bus-icon.png" alt="" />
-            </button>
+            <a href="#ticket-section"><button class="flex btn px-8 bg-[#1cd1003f] border-[#1DD100] items-center">
+                <span class="font-raleway font-bold capitalize text-[20px] text-[#1DD100]">bus</span>
+                <img src="./img/bus-icon.png" alt="" />
+              </button></a>
           </div>
         </div>
       </div>
@@ -64,10 +64,12 @@
               The integrated testing features allow for a streamlined .
             </p>
 
-            <button class="btn banner-btn bg-[#1DD100] border-none">
-              <span class="font-raleway font-bold text-[20px]">
-                Buy Tickets</span>
-            </button>
+
+
+            <a href="#buy-ticket-section"><button class="btn banner-btn bg-[#1DD100] border-none">
+                <span class="font-raleway font-bold text-[20px]">
+                  Buy Tickets</span>
+              </button></a>
           </div>
           <div class="banner-other-info absolute bottom-[-160px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div class="info-card flex w-[900px] justify-between">
@@ -245,7 +247,7 @@
           </div>
           <!-- ==================== -->
 
-          <div class="buy-ticket-section mt-16 flex justify-between gap-4">
+          <div id="buy-ticket-section" class=" mt-16 flex justify-between gap-4">
             <!-- ==================== -->
             <div class="section-one bg-white w-7/12 p-6 space-y-3 rounded-xl font-medium ">
               <div class="section-title pb-3 border-b-2 border-dashed">
@@ -435,9 +437,15 @@
     </main>
     <button class="btn" onclick="my_modal_2.showModal()">open modal</button>
     <dialog id="my_modal_2" class="modal">
-      <div class="modal-box">
-        <h3 class="font-bold text-lg">Hello!</h3>
-        <p class="py-4">Press ESC key or click outside to close</p>
+      <div class="modal-box flex flex-col justify-center items-center space-y-4">
+        <div class="image">
+          <img src="./img/success.png" alt="">
+        </div>
+        <h3 class="font-bold text-lg text-green-500">SUCCESS</h3>
+        <p class="text-center">Thank you for Booking Our Bus Seats.
+          We are working hard to find the best service and deals for you.</p>
+        <h3>Shortly you will find a confirmation in your email.</h3>
+        <button class="btn btn-primary bg-green-500 border-none text-white">Continue</button>
       </div>
       <form method="dialog" class="modal-backdrop">
         <button>close</button>
